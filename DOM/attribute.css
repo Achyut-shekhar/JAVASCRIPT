@@ -3,3 +3,11 @@ div{
     height: 50vh;
     background-color: blue;
 }
+.para{
+    background-color: red;
+    color: white;
+}
+
+.newpara{
+    background-color: green;
+}

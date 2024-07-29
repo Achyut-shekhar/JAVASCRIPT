@@ -12,3 +12,13 @@ div.style.flexDirection="column"
 div.style.justifyContent="center"
 div.style.alignItems="center"
 //centering the button
+
+//node prepend 
+let newheading=document.createElement("h1");
+newheading.innerHTML="<i>hi, i am new</i>";
+
+document.querySelector("body").prepend(newheading);
+
+//remove
+let para=document.querySelector("p");
+para.remove();//removes the paragraph
