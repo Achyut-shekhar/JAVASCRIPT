@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: beige;
+}
+
+.container{
+    background-color: aqua;
+    padding: 2rem;
+    border-radius: 10px;
+    min-height: 50vh;
+    width: 40vh;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    font-size: 30px
+}
+
+form select, button, input{
+
+    width: 100%;
+    border: none;
+    outline: none;
+    
+}
