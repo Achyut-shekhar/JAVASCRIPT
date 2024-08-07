@@ -8,15 +8,17 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: beige;
+    background-color:#f7cac9 ;
+    text-align: center;
 }
 
 .container{
-    background-color: aqua;
+    background-color: white;
     padding: 2rem;
     border-radius: 10px;
     min-height: 50vh;
     width: 40vh;
+    
 }
 
 .header{
@@ -27,8 +29,52 @@ body {
 
 form select, button, input{
 
-    width: 100%;
+    width: 80%;
     border: none;
     outline: none;
+    background-color: white;
+    border-radius: 10px;
     
+}
+
+form input{
+    border: 2px solid lightgray;
+    height: 2rem;
+    font-size: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 50%;
+    
+}
+.dropdown{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.input p{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.selectContainer{
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.dropdown i{
+    font-size: 1.5rem;
+    
+}
+
+.msg{
+    margin: 2rem 0 2rem 0;
+}
+
+button{
+    border: 2px solid lightgray;
+    height: 2rem;
+    font-size: 1rem;
 }
