@@ -25,7 +25,7 @@ for(let select of dropdown) {
     updateflag(evt.target);
   })
 }
-// chnaging the flag 
+// changing the flag 
 const updateflag=(element)=>{
     let currcode=element.value;
     let countryCode=countryList[currcode];
@@ -52,6 +52,7 @@ btn.addEventListener("click",async (evt)=>{
     const response = await fetch(url);
     const data = await response.json();
     const exchangeRate = data.conversion_rates[toCurrency];
+    //.conversion_rate is we are using for api tocurrency call and its how we are using the api for to
     console.log(`Exchange rate from ${fromCurrency} to ${toCurrency}: ${exchangeRate}`);
     // You can update your UI with the exchange rate here
   let finalamount=exchangeRate*amtvalue;
