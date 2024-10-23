@@ -9,17 +9,20 @@ const tocurr=document.querySelector
 const apiKey = '1cbae5296f96dca532ca2f28'; // Replace with your API key
 const url = `https://v6.exchangerate-api.com/v6/${apiKey}/latest/${fromcurr}`;
 
+
 for(let select of dropdown) {
   for (let code in countryList) {
     let newoptions = document.createElement("option");
     newoptions.innerText = code;
     newoptions.value = code;
+    console.log(newoptions.value)
     if(select.name==="from" &&code==="USD")
         newoptions.selected="selected"
     if(select.name==="to" &&code==="INR")
         newoptions.selected="selected"
     select.append(newoptions);
   }
+ 
 
   select.addEventListener("change",(evt)=>{
     updateflag(evt.target);
